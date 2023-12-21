@@ -6,7 +6,6 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 export default function Login() {
   const { error, login } = useLogin();
   const { email, setEmail, uid, setUid } = useContext(AppContext);
-
   const mailRef = useRef();
   const passRef = useRef();
 
